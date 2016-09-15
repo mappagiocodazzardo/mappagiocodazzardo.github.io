@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Codici - dotdotdot - Mappe</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#6B94B0">
+    
+    <link rel="stylesheet" href="dist/css/leaflet.css" />
+    <link rel="stylesheet" href="dist/css/MarkerCluster.css" />
+    <link rel="stylesheet" href="dist/css/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="dist/css/easy-button.css" />
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="dist/css/leaflet.groupedlayercontrol.min.css" />
+    <link rel="stylesheet" href="dist/css/leaflet-search.min.css" />
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="dist/css/fakeLoader.css"/>
+	<link rel="stylesheet" href="css/style.css?v=20160907"/>
+
+    <!--[if lte IE 6]>
+	<style type="text/css">
+		#map {
+			height: 100%;
+		}
+	</style>
+	<![endif]-->
+</head>
+
+<body>
+    <div id="map"></div>
+    <footer class="col-xs-12 col-sm-6 col-md-4 footer img-container">
+        <div class="row">
+	        <p class="col-xs-3">
+	        	<img src="img/logo_regione.png" class="img-responsive footer-img" alt="Regione Lombardia"> 
+	        </p>
+  	        <p class="col-xs-3 col-md-2">
+	        	<img src="img/NoSlot.png" class="img-responsive footer-img" alt="NoSlot">
+	        </p>
+	        <p class="text-center col-xs-3 col-md-2" style="max-height: 40px;">
+	          <a href='#' data-toggle='modal' data-target='#helpMappa' title='Mappa' style="line-height: 55px;">Mappa</a>
+	        </p>
+	        <p class="text-center col-xs-3 col-md-2" style="max-height: 40px;">
+	          <a href='#' data-toggle='modal' data-target='#helpCredits' title='Credits' style="line-height: 55px;">Credits</a>
+	        </p>
+	        <p class="text-center hidden-xs col-md-2" style="max-height: 40px;">
+	          <a href='#' data-toggle='modal' data-target='#helpDownload' title='Download' style="line-height: 55px;">Download</a>
+	        </p>
+	    </div>
+    </footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="helpSensibili" tabindex="-1" role="dialog" aria-labelledby="helpSensibiliLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="helpSensibiliLabel">Luoghi sensibili</h4>
+	      </div>
+	      <div class="modal-body">
+		Luoghi con presenza di cittadini considerati maggiormente vulnerabili, ad es. istituti scolastici di ogni ordine e grado, luoghi di culto, impianti sportivi, strutture residenziali o semiresidenziali operanti in ambito sanitario o sociosanitario, strutture ricettive per categorie protette, luoghi di aggregazione giovanile e oratori (art.5 punto1, Legge regionale 21 ottobre 2013 - n. 8).
+	      </div>
+	      <div class="modal-footer">
+		  	<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="helpPresidi" tabindex="-1" role="dialog" aria-labelledby="helpPresidiLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="helpPresidiLabel">Presidi GAP</h4>
+	      </div>
+	      <div class="modal-body">
+		Organizzazioni pubbliche e/o private che possono rappresentare punti di aggancio per giocatori problematici e per le loro famiglie e che offrono servizi differenti (es. primo colloquio, orientamento ai servizi, consulenza legale, presa in carico ambulatoriale/clinica/sociale, gruppi di auto aiuto), individuati in linea con art.2 Legge regionale 21 ottobre 2013 - n. 8.
+	      </div>
+	      <div class="modal-footer">
+		  	<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="helpEsercizi" tabindex="-1" role="dialog" aria-labelledby="helpEserciziLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="helpEserciziLabel">Esercizi pubblici autorizzati</h4>
+	      </div>
+	      <div class="modal-body">
+		Esercizi iscritti tra nov’15 e gen’16 all’Elenco dei soggetti di cui all'articolo 1, comma 533, della legge n. 266/2005, ovvero soggetti autorizzati alla installazione di apparecchi da intrattenimento (Newslot e Videolottery).
+	      </div>
+	      <div class="modal-footer">
+		  	<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="helpDensity" tabindex="-1" role="dialog" aria-labelledby="helpDensityLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="helpDensity">Densità di abitanti per ogni apparecchio installato</h4>
+	      </div>
+	      <div class="modal-body">
+		   Visualizzazione del rapporto tra numero di abitanti nello specifico comune per singolo apparecchio installato sul medesimo territorio. La soglia critica è 128, ovvero la media regionale di densità di abitanti per apparecchio registrata nel 2015 (<a href="https://www.agenziadoganemonopoli.gov.it/portale/documents/20182/536133/Organizzazione,+attivit%C3%A0+e+statistica+anno+2015.pdf/93a3a3b5-4cf5-4b21-970a-f732851e738c?version=1.2" target="_blank">Libro Blu, Monopoli di Stato</a>).
+		  </div>
+	      <div class="modal-footer">
+		  	<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="helpAreeSens" tabindex="-1" role="dialog" aria-labelledby="helpAreeSensLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="helpAreeSens">Aree sensibili</h4>
+	      </div>
+	      <div class="modal-body">
+		Visualizzazione indicativa delle aree con raggio di 500 metri a partire dal punto di geolocalizzazione di ciascun luoghi sensibile, ovvero la distanza minima da luoghi sensibili richiesta per la nuova installazione di apparecchi da gioco (d.g.r. n. 1274 del 24 gennaio 2013, "Distanza dai luoghi sensibile per la nuova collocazione di apparecchi per il gioco di azzardo lecito", BURL n. 5 del 28 gennaio 2014).
+	      </div>
+	      <div class="modal-footer">
+		  	<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="helpMappa" tabindex="-1" role="dialog" aria-labelledby="helpMappaLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="helpMappaLabel">La mappa</h4>
+	      </div>
+	      <div class="modal-body">
+
+		Questa mappa offre una fotografia dell’offerta di Gioco d’Azzardo lecito (in termini di Newslot e Videolottery) sui territori dei <b>distretti di Varese, Saronno, Luino, Como, Sondrio, Chiavenna, Morbegno, Tirano, Lachiarella, Sesto San Giovanni e Garbagnate Milanese</b>, attraverso la geolocalizzazione degli <b>esercizi pubblici</b> che, autorizzati nel 2015 e nei primi mesi del 2016, hanno installato apparecchi di intrattenimento tipo Newslot e Videolotteries. La mappa mette inoltre in relazione visiva gli esercizi mappati con i luoghi potenzialmente frequentati da target vulnerabili (i cosiddetti <b>luoghi sensibili</b>, come definiti dalla RL n.8 del 21/10/2013). Infine la mappa geolocalizza le strutture pubbliche e private (<b>presidi</b>) che potenzialmente possono rispondere ad eventuali problematiche legate al Gioco d’Azzardo Patologico (GAP) attraverso ad es. servizi quali: primo ascolto e filtro, consulenza psicologica e legale, sostegno di gruppo, presa in carico sociale e cura.<br>Questo strumento risponde in primo luogo ad <b>un’esigenza informativa e di orientamento</b> sia della pubblica amministrazione, vigili e polizia locale che dei professionisti del settore, offrendo elementi di conoscenza e di riflessione relativamente a temi quali: <b>diffusione e capillarità dell’offerta, grado di rischio</b> (per numerosità e/o per vicinanza geografica) nell’aggancio di target sensibili e grado di presidio di strutture competenti. La mappa intende anche porsi come <b>strumento di orientamento all’aiuto</b> per quei giocatori o per le loro famiglie che si trovano in difficoltà legate al gioco d’azzardo problematico e patologico, attraverso la geolocalizzazione dei servizi pubblici e delle organizzazioni del terzo settore che possono dare loro ascolto e sostegno.
+
+	      </div>
+	      <div class="modal-footer">
+		  	<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="helpCredits" tabindex="-1" role="dialog" aria-labelledby="helpCreditsLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="helpCreditsLabel">Credits</h4>
+	      </div>
+	      <div class="modal-body">
+		<p>
+		<b>Mappatura realizzata da:</b><br>
+		<a href="http://www.codiciricerche.it/" target="_blank"><img style="height: 30px;" src="img/codicilogo.png"/></a> Codici Coop. Soc. a r.l. ONLUS (MI)<br>
+		<a href="http://www.cooplotta.it/" target="_blank"><img style="height: 30px;" src="img/colcelogo.png"/></a> Cooperativa Lotta Contro l’Emarginazione Cooperativa Sociale Onlus (Sesto San Giovanni, Varese, Como, Sondrio)<br>
+		insieme a: Addiction Center (Lachiarella, MI), Associazione Saman (MI), Koiné Cooperativa Sociale Onlus (Novate MI), Amalo (MI), Cooperativa sociale A77 (Paderno Dugnano, MI), Assodip, Polizia locale di Saronno (VA), Polizia locale dei comuni di Chiavenna, Campodolcino, Castione Andevenno, Dubino, Grosio, Mese, Montagna in Valtellina, Morbegno, Piuro, Ponte in Valtellina, Prata Camportaccio, Samolaco, Sondrio, Talamona, Tirano, Verceia e Villa di Chiavenna (SO).</p>
+
+		<p>
+		<b>Geolocalizzazione e sviluppo piattaforma web:</b><br>
+		<a href="http://www.opendotlab.it" target="_blank"><img style="height: 40px;" src="img/openlogo.png"/></a> opendot srl</br>
+        Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a></p>
+		
+	    <p>
+		<b>Fonte dati:</b><br>
+		<a href="https://www.agenziadoganemonopoli.gov.it/portale/monopoli/giochi/apparecchi_intr/elenco_soggetti_ries?el=2" target="_blank">Agenzia delle Dogane e dei Monopoli - Giochi - Elenco soggetti - Ries</a> (per Elenco esercizi autorizzati nov’15-gen’16)<br>
+		<a href="https://www.dati.lombardia.it/" target="_blank">Opendata Lombardia</a> (per Luoghi sensibili, Presidi pubblici)<br>
+		<a href="https://www.agenziadoganemonopoli.gov.it/portale/documents/20182/536133/Organizzazione,+attivit%C3%A0+e+statistica+anno+2015.pdf/93a3a3b5-4cf5-4b21-970a-f732851e738c?version=1.2" target="_blank">Libro Blu, Monopoli di Stato</a> (per media regionale di densità di abitanti per apparecchio registrata nel 2015)<br>
+		Consultazione partner di progetto e reti territoriali (per Presidi Terzo Settore)</p>
+
+		<p class="text-warning">AVVERTENZA: in relazione alla geolocalizzazione degli esercizi pubblici autorizzati, svolta dagli operatori sul campo, si segnala la possibilità di errori di georeferenziazione. Inoltre si specifica che la mappa non risponde ad eventuali modifiche o aggiornamenti che i dati potrebbero subire in periodi successivi a quello di riferimento indicato (nov’15 - gen’16)</p>
+
+		<p>
+		<b>Finanziata da:</b><br>
+		Regione Lombardia/2015 Bando per lo sviluppo e il consolidamento di azioni di prevenzione e contrasto alle forme di dipendenza dal gioco d’azzardo lecito.</p>
+
+		<p>
+		<b>Promossa da:</b><br>
+		Comuni capofila e partner di progetto sui territori di<br>
+		<ul>
+		<li>Busto Arsizio <i>(progetto GAP 2.0)</i>
+		<li>Como, Brunate, Albese con Cassano, Montano Lucino, Cernobbio, Lipomo, Lezzeno, Cavallasca, Moltrasio, San Fermo della Battaglia, Carate Urio <i>(progetto Quando il gioco si fa duro)</i>
+		<li>Lacchiarella, Binasco, Casarile, Noviglio, Vernate, Zibido S. Giacomo, Baranzate, Bollate, Cesate, Garbagnate Milanese, Senago, Solaro <i>(progetto Non di solo gioco)</i>
+		<li>Novate Milanese, Paderno Dugnano <i>(progetto Il Gioco è bello se non nuoce)</i>
+		<li>Sesto San Giovanni <i>(progetto Game Over)</i>
+		<li>Luino, Agra, Bedero Valcuvia, Brezzo di Bedero, Brissago Valtravaglia, Cadegliano, Castelveccana, Cremenaga, Cugliate Fabiasco, Cunardo, Curiglia-Monteviasco, Dumenza, Ferrera di Varese, Germignaga, Grantola, Lavena Ponte Tresa, Maccagno con Pino e Veddasca, Marchirolo, Marzio, Mesenzana, Montegrino V., Porto Valtravaglia, Tronzano, Valganna <i>(progetto Proposte Azzardate)</i>
+		<li>Varese, Barasso, Bodio Lomnago, Brinzio, Casciago, Cazzago Brabbia, Comerio, Galliate Lombardo, Inarzo, Lozza, Luvinate, Malnate <i>(progetto Monetine)</i>
+		<li>Saronno, Caronno Pertusella, Origgio, Uboldo, Gerenzano, Cislago <i>(progetto GAP 2.0)</i>
+		<li>Chiavenna, Sondrio, Grosio, Mese, Montagna in Valtellina, Morbegno, Dubino, Ponte in Valtellina, Talamona, Prata Camportaccio, Piuro, Tirano, Verceia, Villa di Chiavenna, Samolaco, Campodolcino, Castione Andevenno <i>(progetto Insieme Contro l’Azzardo)</i>
+		</p>
+	      </div>
+	      <div class="modal-footer">
+		  	<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="helpDownload" tabindex="-1" role="dialog" aria-labelledby="helpDownloadLabel">
+	  <div class="modal-dialog modal-md" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="helpDownloadLabel">Download</h4>
+	      </div>
+	      <div class="modal-body">
+	  		<div class="panel panel-default">
+		  		<div class="panel-heading"><b>Attributi</b></div>
+				<table class="table">
+					<tbody>
+					<tr>
+						<td class="col-md-11">Densità di abitanti per ogni apparecchio installato</td>
+						<td class="col-md-1"><a href="#" role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+	  		<div class="panel panel-default">
+		  		<div class="panel-heading"><b>Luoghi sensibili</b></div>
+				<table class="table">
+					<tbody>
+					<tr>
+						<td class="col-md-11">Impianti sportivi</td>
+						<td class="col-md-1"><a href="#" role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Istituti scolastici inf. e sup.</td>
+						<td class="col-md-1"><a href="#" role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Centri anziani (AUSER)</td>
+						<td class="col-md-1"><a href="#" role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Centri di aggregazione giovanile</td>
+						<td class="col-md-1"><a href="#" role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Residenze sanitarie assistenziali</td>
+						<td class="col-md-1"><a href="#" role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Centri diurni per anziani</td>
+						<td class="col-md-1"><a role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Strutture sanitarie ospedaliere</td>
+						<td class="col-md-1"><a role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Luoghi di culto</td>
+						<td class="col-md-1"><a role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+	  		<div class="panel panel-default">
+		  		<div class="panel-heading"><b>Presidi GAP</b></div>
+				<table class="table">
+					<tbody>
+					<tr>
+						<td class="col-md-11">Servizi del terzo settore e volontariato sociale</td>
+						<td class="col-md-1"><a role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Servizi sociali</td>
+						<td class="col-md-1"><a role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Ser.T</td>
+						<td class="col-md-1"><a role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+	  		<div class="panel panel-default">
+		  		<div class="panel-heading"><b>Esercizi pubblici autorizzati</b></div>
+				<table class="table">
+					<tbody>
+					<tr>
+						<td class="col-md-11">Con apparecchi installati</td>
+						<td class="col-md-1"><a role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					<tr>
+						<td class="col-md-11">Senza apparecchi installati</td>
+						<td class="col-md-1"><a role="button" class="btn btn-default glyphicon glyphicon-download-alt"></a></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+	      </div>
+	      <div class="modal-footer">
+		  	<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div id="fakeLoader"></div>
+
+    <script src="dist/js/jquery-1.12.2.min.js"></script>
+    <script src="dist/js/fakeLoader.min.js"></script>
+
+    <script type="text/javascript">
+		$("#fakeLoader").fakeLoader({
+		    timeToHide:1200,
+		    bgColor:"#6B94B0",
+		    spinner:"spinner1"
+		});
+	</script>
+
+	<!-- load GeoJson files -->
+	<script src="data/mappa-codici-data.min.js?v=20160907"></script>
+
+    <!-- load all external libraries -->
+	<script src="dist/js/mappa-codici-lib.js?v=20160907"></script>
+
+    <!-- load application -->
+	<script src="js/app.js?v=20160907"></script>
+	</body>
+</html>

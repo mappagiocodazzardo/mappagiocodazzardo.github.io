@@ -1,0 +1,239 @@
+/* COLORS */
+$sport   : #8693E9;
+$scuole  : #7584E6;
+$auser   : #6475E3;
+$giovani : #5365DF;
+$diurni  : #4156DC;
+$sso     : #3047D9;
+$culto   : #2337BE;
+$rsa     : #4156DC;
+
+$terzo   : #ffdb00;
+$sociali : #fd0;
+$sert    : #ffa400;
+
+$slots   : #E55934;
+$noslots : #00E099;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#map {
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  /*width: 370px;*/
+  /* Set the fixed height of the footer here */
+  /*height: 50px;*/
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 2px #888;
+}
+
+.footer-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  max-height: 40px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.mycluster {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 20px;
+    line-height: 40px;
+    opacity: .8;
+    z-index: -999; 
+}
+
+.clusterSso {
+    background-color: $sso;
+}
+
+.clusterAuser {
+    background-color: $auser;
+}
+
+.clusterSport {
+    background-color: $sport;
+}
+
+.clusterSlots {
+    background-color: $slots;
+}
+
+.clusterNoSlots {
+    background-color: $noslots;
+}
+
+.clusterScuole {
+    background-color: $scuole;
+}
+
+.clusterDiurni {
+    background-color: $diurni;
+}
+
+.clusterGiovani {
+    background-color: $giovani;
+}
+
+.clusterRsa {
+    background-color: $rsa;
+}
+
+.clusterSociali {
+    background-color: $sociali;
+}
+
+.clusterTerzo {
+    background-color: $terzo;
+}
+
+.clusterSert {
+    background-color: $sert;
+}
+
+.clusterCulto {
+    background-color: $culto;
+}
+
+.markerCulto {
+    color: $culto;
+    fill: $culto;
+}
+
+.markerSert {
+    color: $sert;
+    fill: $sert;
+}
+
+.markerSso {
+    color: $sso;
+    fill: $sso;
+}
+
+.markerAuser {
+    color: $auser;
+    fill: $auser;
+}
+
+.markerGiovani {
+    color: $giovani;
+    fill: $giovani;
+}
+
+.markerSlots {
+    color: $slots;
+    fill: $slots;
+}
+
+.markerNoSlots {
+    color: $noslots;
+    fill: $noslots;
+}
+
+.markerSport {
+    color: $sport;
+    fill: $sport;
+}
+
+.markerScuole {
+    color: $scuole;
+    fill: $scuole;
+}
+
+.markerDiurni {
+    color: $diurni;
+    fill: $diurni;
+}
+
+.markerSociali {
+    color: $sociali;
+    fill: $sociali;
+}
+
+.markerTerzo {
+    color: $terzo;
+    fill: $terzo;
+}
+
+.markerRsa {
+    color: $rsa;
+    fill: $rsa;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.info {
+    padding: 6px 8px;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.leaflet-control-layers label {
+    font-weight: normal;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+.leaflet-control-layers-group-label {
+  padding-left: 0px !important;
+}
+
+.leaflet-container .leaflet-control-search {
+  float: right;
+}
+
+.leaflet-container a {
+    color: #000;
+}
+
+.modal .modal-body {
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+a, a:focus {
+    color: #6B94B0;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .leaflet-bottom {
+      bottom: 60px;
+    }
+}
