@@ -1,0 +1,684 @@
+var exp_Strutturesanitarie = {
+	"type": "FeatureCollection",
+	"crs": {
+		"type": "name",
+		"properties": {
+			"name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+		}
+	},
+
+	"features": [{
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.224710108482915, 45.5360871100504]
+		},	
+		"type": "Feature",
+		"properties": {
+			"ENTE": 968.0,
+			"SUB": 0.0,
+			"CAP": 20099.0,
+			"PEDIATRICO": "SI",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030051",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "0257991",
+			"SITO_WEB": "WWW.ICP.MI.IT",
+			"COORD_X": 517562.111,
+			"EMERGENZA": "DIPARTIMENTO EMERGENZA ACCETTAZIONE",
+			"ENTE0": "A.O. \"IST.CLIN.PERFEZIONAMENTO\"-MILANO",
+			"RICOVERO0": "P.O.  CITTA' DI SESTO S. GIOVANNI",
+			"LOCALITA": "SESTO SAN GIOVANNI",
+			"INDIRIZZO": "VIALE MATTEOTTI 83",
+			"OBJECTID": 92.0,
+			"EMERGENZ0": "DEA",
+			"COORD_Y": 5042464.813,
+			"QUALITA": 13.0,
+			"APERTURA": "20090101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 308.0,
+			"TELEFONO": "0257991"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.219458369389823, 45.53677484753513]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 948.0,
+			"SUB": 0.0,
+			"CAP": 20099.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030948",
+			"RICOVERO": "ISTITUTO DI RICOVERO E CURA A CARATTERE SCIENTIFICO - PRIVATO",
+			"FAX": "02 22476125",
+			"SITO_WEB": "WWW.MULTIMEDICA.IT",
+			"COORD_X": 517031.36,
+			"EMERGENZA": "DIPARTIMENTO EMERGENZA ACCETTAZIONE",
+			"ENTE0": "CASA DI CURA MULTIMEDICA  S.P.A. SPA-SESTO S.G.",
+			"RICOVERO0": "CASA DI CURA MULTIMEDICA  S.P.A.",
+			"LOCALITA": "SESTO SAN GIOVANNI",
+			"INDIRIZZO": "VIA MILANESE, 300",
+			"OBJECTID": 99.0,
+			"EMERGENZ0": "DEA",
+			"COORD_Y": 5042547.329,
+			"QUALITA": 13.0,
+			"APERTURA": "20070101000000",
+			"STRUTTURA": "STRUTTURA PRIVATA A CONTRATTO",
+			"COD_TIPO": 32.0,
+			"COD_ASL": 308.0,
+			"TELEFONO": "02  24209285"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.154723099086256, 45.573251851532056]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 309.0,
+			"SUB": 0.0,
+			"CAP": 20037.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030116",
+			"RICOVERO": "CASA DI CURA ACCREDITATA A CONTRATTO",
+			"FAX": "0299038223",
+			"SITO_WEB": "WWW.CLINICASANCARLO.IT",
+			"COORD_X": 512190.022,
+			"EMERGENZA": "DIPARTIMENTO EMERGENZA ACCETTAZIONE",
+			"ENTE0": "A.S.L. DELLA PROVINCIA DI MILANO 1",
+			"RICOVERO0": "CLINICA SAN CARLO - PADERNO DUGNANO",
+			"LOCALITA": "PADERNO DUGNANO",
+			"INDIRIZZO": "VIA OSPEDALE 21",
+			"OBJECTID": 135.0,
+			"EMERGENZ0": "DEA",
+			"COORD_Y": 5046494.972,
+			"QUALITA": 13.0,
+			"APERTURA": "19680601000000",
+			"STRUTTURA": "STRUTTURA PRIVATA A CONTRATTO",
+			"COD_TIPO": 51.0,
+			"COD_ASL": 309.0,
+			"TELEFONO": "02 990381"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.084096182378891, 45.57046916961944]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 974.0,
+			"SUB": 0.0,
+			"CAP": 20020.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030066",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "N/D",
+			"SITO_WEB": "WWW.AOGARBAGNATE.LOMBARDIA.IT",
+			"COORD_X": 505915.58053,
+			"EMERGENZA": "DIPARTIMENTO EMERGENZA ACCETTAZIONE",
+			"ENTE0": "A.O. \"G. SALVINI\" - GARBAGNATE",
+			"RICOVERO0": "OSPEDALE G.SALVINI-GARBAGNATE MIL.SE",
+			"LOCALITA": "GARBAGNATE MILANESE",
+			"INDIRIZZO": "VIALE FORLANINI 121",
+			"OBJECTID": 139.0,
+			"EMERGENZ0": "DEA",
+			"COORD_Y": 5046669.735,
+			"QUALITA": 4.0,
+			"APERTURA": "19840101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 309.0,
+			"TELEFONO": "02 994301"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.117090495011793, 45.53999039016375]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 974.0,
+			"SUB": 0.0,
+			"CAP": 20020.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030087",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "N/D",
+			"SITO_WEB": "WWW.AOGARBAGNATE.LOMBARDIA.IT",
+			"COORD_X": 509171.282,
+			"EMERGENZA": "PRONTO SOCCORSO",
+			"ENTE0": "A.O. \"G. SALVINI\" - GARBAGNATE",
+			"RICOVERO0": "OSPEDALE CADUTI BOLLATESI - BOLLATE",
+			"LOCALITA": "BOLLATE",
+			"INDIRIZZO": "VIA PIAVE 20",
+			"OBJECTID": 141.0,
+			"EMERGENZ0": "PS",
+			"COORD_Y": 5043101.706,
+			"QUALITA": 13.0,
+			"APERTURA": "19840101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 309.0,
+			"TELEFONO": "02  994305224"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.087749881481379, 45.81037662734846]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 303.0,
+			"SUB": 0.0,
+			"CAP": 22100.0,
+			"PEDIATRICO": "SI",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030030",
+			"RICOVERO": "OSPEDALE CLASSIFICATO",
+			"FAX": "031308047",
+			"SITO_WEB": "WWW.VALDUCE.IT",
+			"COORD_X": 506813.819,
+			"EMERGENZA": "PRONTO SOCCORSO",
+			"ENTE0": "A.S.L. DELLA PROVINCIA DI COMO",
+			"RICOVERO0": "OSP.GENERALE DI ZONA VALDUCE - COMO",
+			"LOCALITA": "COMO",
+			"INDIRIZZO": "VIA DANTE ALIGHIERI 11",
+			"OBJECTID": 56.0,
+			"EMERGENZ0": "PS",
+			"COORD_Y": 5072958.946,
+			"QUALITA": 13.0,
+			"APERTURA": "19840101000000",
+			"STRUTTURA": "STRUTTURA PRIVATA A CONTRATTO",
+			"COD_TIPO": 4.0,
+			"COD_ASL": 303.0,
+			"TELEFONO": "031 324111"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.061022620652375, 45.82341236358604]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 303.0,
+			"SUB": 0.0,
+			"CAP": 22100.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030032",
+			"RICOVERO": "CASA DI CURA ACCREDITATA A CONTRATTO",
+			"FAX": "031576099",
+			"SITO_WEB": "WWW.VILLAAPRICA-GSD.IT",
+			"COORD_X": 504711.781,
+			"EMERGENZA": "PUNTO DI PRIMO INTERVENTO",
+			"ENTE0": "A.S.L. DELLA PROVINCIA DI COMO",
+			"RICOVERO0": "IST.CLINICO VILLA APRICA SPA-COMO",
+			"LOCALITA": "COMO",
+			"INDIRIZZO": "VIA CASTELCARNASINO 10",
+			"OBJECTID": 58.0,
+			"EMERGENZ0": "PPI",
+			"COORD_Y": 5074407.86,
+			"QUALITA": 13.0,
+			"APERTURA": "19311001000000",
+			"STRUTTURA": "STRUTTURA PRIVATA A CONTRATTO",
+			"COD_TIPO": 51.0,
+			"COD_ASL": 303.0,
+			"TELEFONO": "031 579411"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.16279567071212, 45.79783162360173]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 303.0,
+			"SUB": 0.0,
+			"CAP": 22032.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030037",
+			"RICOVERO": "CASA DI CURA ACCREDITATA A CONTRATTO",
+			"FAX": "031427246",
+			"SITO_WEB": "WWW.SUOREOSPITALIERE.IT/ALBESE",
+			"COORD_X": 512751.82,
+			"EMERGENZA": "N/D",
+			"ENTE0": "A.S.L. DELLA PROVINCIA DI COMO",
+			"RICOVERO0": "CASA DI CURA VILLA S. BENEDETTO - ALBESE",
+			"LOCALITA": "ALBESE CON CASSANO",
+			"INDIRIZZO": "VIA ROMA 16",
+			"OBJECTID": 60.0,
+			"EMERGENZ0": "N/D",
+			"COORD_Y": 5071505.243,
+			"QUALITA": 13.0,
+			"APERTURA": "19560301000000",
+			"STRUTTURA": "STRUTTURA PRIVATA A CONTRATTO",
+			"COD_TIPO": 51.0,
+			"COD_ASL": 303.0,
+			"TELEFONO": "031 4291511"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.080068105048765, 45.80475749094903]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 303.0,
+			"SUB": 0.0,
+			"CAP": 22100.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030372",
+			"RICOVERO": "CASA DI CURA ACCREDITATA NON A CONTRATTO",
+			"FAX": "03127641999",
+			"SITO_WEB": "WWW.CDSN.IT",
+			"COORD_X": 506114.412,
+			"EMERGENZA": "N/D",
+			"ENTE0": "A.S.L. DELLA PROVINCIA DI COMO",
+			"RICOVERO0": "CENTRO DIAGNOSTICO SAN NICOLO' - S.R.L.",
+			"LOCALITA": "COMO",
+			"INDIRIZZO": "VIALE INNOCENZO XI, 70",
+			"OBJECTID": 63.0,
+			"EMERGENZ0": "N/D",
+			"COORD_Y": 5072497.375,
+			"QUALITA": 13.0,
+			"APERTURA": "20071001000000",
+			"STRUTTURA": "STRUTTURA PRIVATA NON A CONTRATTO",
+			"COD_TIPO": 52.0,
+			"COD_ASL": 303.0,
+			"TELEFONO": "03127641111"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.045214122310549, 45.7933604697637]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 959.0,
+			"SUB": 0.0,
+			"CAP": 22020.0,
+			"PEDIATRICO": "SI",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030902",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "031 5855739",
+			"SITO_WEB": "WWW.HSACOMO.ORG",
+			"COORD_X": 503557.563,
+			"EMERGENZA": "DIPARTIMENTO EMERGENZA ACCETTAZIONE",
+			"ENTE0": "A.O. S.ANNA - COMO",
+			"RICOVERO0": "OSPEDALE S. ANNA - COMO",
+			"LOCALITA": "SAN FERMO DELLA BATTAGLIA",
+			"INDIRIZZO": "VIA RAVONA SNC",
+			"OBJECTID": 53.0,
+			"EMERGENZ0": "DEA",
+			"COORD_Y": 5071533.257,
+			"QUALITA": 13.0,
+			"APERTURA": "19950101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 303.0,
+			"TELEFONO": "031 5851"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.879850798554791, 46.171827338150166]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 980.0,
+			"SUB": 0.0,
+			"CAP": 23100.0,
+			"PEDIATRICO": "SI",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030042",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "0342521368",
+			"SITO_WEB": "WWW.AOVV.IT",
+			"COORD_X": 567886.364,
+			"EMERGENZA": "DIPARTIMENTO EMERGENZA ACCETTAZIONE",
+			"ENTE0": "A.O. VALTELLINA E VALCHIAVENNA",
+			"RICOVERO0": "OSPEDALE CIVILE - SONDRIO",
+			"LOCALITA": "SONDRIO",
+			"INDIRIZZO": "VIA STELVIO 25",
+			"OBJECTID": 185.0,
+			"EMERGENZ0": "DEA",
+			"COORD_Y": 5113395.712,
+			"QUALITA": 13.0,
+			"APERTURA": "19840101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 313.0,
+			"TELEFONO": "0342521111"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.399494147093897, 46.321577620009364]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 980.0,
+			"SUB": 0.0,
+			"CAP": 23022.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030044",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "034367380",
+			"SITO_WEB": "WWW.AOVV.IT",
+			"COORD_X": 530709.652,
+			"EMERGENZA": "PRONTO SOCCORSO",
+			"ENTE0": "A.O. VALTELLINA E VALCHIAVENNA",
+			"RICOVERO0": "OSPEDALE GENERALE DI ZONA - CHIAVENNA",
+			"LOCALITA": "CHIAVENNA",
+			"INDIRIZZO": "VIA CERERIA 4",
+			"OBJECTID": 187.0,
+			"EMERGENZ0": "PS",
+			"COORD_Y": 5129930.3,
+			"QUALITA": 13.0,
+			"APERTURA": "19840101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 313.0,
+			"TELEFONO": "034367111"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.573490, 46.133704]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 980.0,
+			"SUB": 0.0,
+			"CAP": 23017.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030045",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "0342614070",
+			"SITO_WEB": "WWW.AOVV.IT",
+			"COORD_X": 544331.498,
+			"EMERGENZA": "PRONTO SOCCORSO",
+			"ENTE0": "A.O. VALTELLINA E VALCHIAVENNA",
+			"RICOVERO0": "OSPEDALE CIVILE - MORBEGNO",
+			"LOCALITA": "MORBEGNO",
+			"INDIRIZZO": "VIA MORELLI N.1",
+			"OBJECTID": 188.0,
+			"EMERGENZ0": "PS",
+			"COORD_Y": 5108987.0,
+			"QUALITA": 13.0,
+			"APERTURA": "19840101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 313.0,
+			"TELEFONO": "0342607111"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [8.846684511117148, 45.621758549799544]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 953.0,
+			"SUB": 0.0,
+			"CAP": 21052.0,
+			"PEDIATRICO": "SI",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030004",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "0331699411",
+			"SITO_WEB": "N/D",
+			"COORD_X": 488094.423,
+			"EMERGENZA": "DIPARTIMENTO EMERGENZA ACCETTAZIONE",
+			"ENTE0": "A.O. OSPEDALE DI CIRCOLO - BUSTO ARSIZIO",
+			"RICOVERO0": "OSPEDALE DI CIRCOLO - BUSTO ARSIZIO",
+			"LOCALITA": "BUSTO ARSIZIO",
+			"INDIRIZZO": "PIAZZALE SOLARO, 3",
+			"OBJECTID": 189.0,
+			"EMERGENZ0": "DEA",
+			"COORD_Y": 5051984.721,
+			"QUALITA": 13.0,
+			"APERTURA": "19840101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 314.0,
+			"TELEFONO": "0331381800"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [8.839597010698615, 45.80898162935447]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 951.0,
+			"SUB": 0.0,
+			"CAP": 21100.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030901",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "0332810703",
+			"SITO_WEB": "N/D",
+			"COORD_X": 487350.185,
+			"EMERGENZA": "EMERGENZA ALTA SPECIALITA'",
+			"ENTE0": "A.O. OSP.CIRC. FONDAZIONE MACCHI-VARESE",
+			"RICOVERO0": "OSPEDALE DI CIRCOLO E FONDAZIONE MACCHI",
+			"LOCALITA": "VARESE",
+			"INDIRIZZO": "VIALE LUIGI BORRI 57",
+			"OBJECTID": 191.0,
+			"EMERGENZ0": "EAS",
+			"COORD_Y": 5072730.716,
+			"QUALITA": 13.0,
+			"APERTURA": "19950101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 314.0,
+			"TELEFONO": "0332278111"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [8.746326680537262, 45.99593109257131]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 951.0,
+			"SUB": 2.0,
+			"CAP": 21016.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030282",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "0332539390",
+			"SITO_WEB": "WWW.OSPEDALE.VARESE.IT",
+			"COORD_X": 480273.332,
+			"EMERGENZA": "PRONTO SOCCORSO",
+			"ENTE0": "A.O. OSP.CIRC. FONDAZIONE MACCHI-VARESE",
+			"RICOVERO0": "OSPEDALE LUINI CONFALONIERI - LUINO",
+			"LOCALITA": "LUINO",
+			"INDIRIZZO": "VIA FORLANINI 6",
+			"OBJECTID": 196.0,
+			"EMERGENZ0": "PS",
+			"COORD_Y": 5093696.962,
+			"QUALITA": 13.0,
+			"APERTURA": "19950101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 314.0,
+			"TELEFONO": "0332539111"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [8.834386720704078, 45.815373538953565]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 951.0,
+			"SUB": 0.0,
+			"CAP": 21100.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030003",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "0332299406",
+			"SITO_WEB": "N/D",
+			"COORD_X": 484973.27726,
+			"EMERGENZA": "PUNTO DI PRIMO INTERVENTO",
+			"ENTE0": "A.O. OSP.CIRC. FONDAZIONE MACCHI-VARESE",
+			"RICOVERO0": "OSPEDALE F. DEL PONTE - VARESE",
+			"LOCALITA": "VARESE",
+			"INDIRIZZO": "VIA FILIPPO DEL PONTE, 19",
+			"OBJECTID": 197.0,
+			"EMERGENZ0": "PPI",
+			"COORD_Y": 5075931.48665,
+			"QUALITA": 4.0,
+			"APERTURA": "19840101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 314.0,
+			"TELEFONO": "0332299111"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.04037250278661, 45.62983067793938]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 953.0,
+			"SUB": 0.0,
+			"CAP": 21047.0,
+			"PEDIATRICO": "SI",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030008",
+			"RICOVERO": "OSPEDALE A GESTIONE DIRETTA PRESIDIO DELLA AO",
+			"FAX": "N/D",
+			"SITO_WEB": "N/D",
+			"COORD_X": 503131.19567,
+			"EMERGENZA": "DIPARTIMENTO EMERGENZA ACCETTAZIONE",
+			"ENTE0": "A.O. OSPEDALE DI CIRCOLO - BUSTO ARSIZIO",
+			"RICOVERO0": "OSP. GENERALE PROVINCIALE - SARONNO",
+			"LOCALITA": "SARONNO",
+			"INDIRIZZO": "PIAZZALE BORELLA 1",
+			"OBJECTID": 200.0,
+			"EMERGENZ0": "DEA",
+			"COORD_Y": 5052698.027,
+			"QUALITA": 13.0,
+			"APERTURA": "19840101000000",
+			"STRUTTURA": "STRUTTURA PUBBLICA",
+			"COD_TIPO": 12.0,
+			"COD_ASL": 314.0,
+			"TELEFONO": "02  96.131"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [8.814574439553212, 45.821101650377734]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 314.0,
+			"SUB": 0.0,
+			"CAP": 21100.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030014",
+			"RICOVERO": "CASA DI CURA ACCREDITATA NON A CONTRATTO",
+			"FAX": "0332281069",
+			"SITO_WEB": "N/D",
+			"COORD_X": 485595.868,
+			"EMERGENZA": "N/D",
+			"ENTE0": "A.S.L. DELLA PROVINCIA DI VARESE",
+			"RICOVERO0": "CASA DI CURA LA QUIETE - VARESE",
+			"LOCALITA": "VARESE",
+			"INDIRIZZO": "VIA DANTE 20",
+			"OBJECTID": 202.0,
+			"EMERGENZ0": "N/D",
+			"COORD_Y": 5074077.596,
+			"QUALITA": 13.0,
+			"APERTURA": "19310701000000",
+			"STRUTTURA": "STRUTTURA PRIVATA NON A CONTRATTO",
+			"COD_TIPO": 52.0,
+			"COD_ASL": 314.0,
+			"TELEFONO": "0332806400"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [8.806817465434175, 45.934807554089446]
+		},
+		"type": "Feature",
+		"properties": {
+			"ENTE": 314.0,
+			"SUB": 0.0,
+			"CAP": 21035.0,
+			"PEDIATRICO": "NO",
+			"CHIUSURA": "N/D",
+			"COD_ISTAT": "030324",
+			"RICOVERO": "CASA DI CURA ACCREDITATA A CONTRATTO",
+			"FAX": "0332990074",
+			"SITO_WEB": "WWW.CLINICALETERRAZZE.COM",
+			"COORD_X": 485049.567,
+			"EMERGENZA": "N/D",
+			"ENTE0": "A.S.L. DELLA PROVINCIA DI VARESE",
+			"RICOVERO0": "CASA DI CURA LE TERRAZZE - CUNARDO",
+			"LOCALITA": "CUNARDO",
+			"INDIRIZZO": "VIA FOSCOLO, 6/B",
+			"OBJECTID": 203.0,
+			"EMERGENZ0": "N/D",
+			"COORD_Y": 5086843.44,
+			"QUALITA": 13.0,
+			"APERTURA": "19980601000000",
+			"STRUTTURA": "STRUTTURA PRIVATA A CONTRATTO",
+			"COD_TIPO": 51.0,
+			"COD_ASL": 314.0,
+			"TELEFONO": "0332992111"
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.084517, 45.791672]
+		},
+		"type": "Feature",
+		"properties": {
+			"RICOVERO0": "ASST Lariana",
+			"LOCALITA": "Como",
+			"INDIRIZZO": "Piazza Camerlata",
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.084969, 45.791243]
+		},
+		"type": "Feature",
+		"properties": {
+			"RICOVERO0": "ASST Lariana",
+			"LOCALITA": "Como",
+			"INDIRIZZO": "Via Santi Brigida e Respaù",
+		}
+	}, {
+		"geometry": {
+			"type": "Point",
+			"coordinates": [9.612551, 46.136484]
+		},
+		"type": "Feature",
+		"properties": {
+			"RICOVERO0": "Centro Socio Sanitario",
+			"LOCALITA": "Talamona",
+			"INDIRIZZO": "Via Combattenti e Reduci",
+		}
+	}]
+};

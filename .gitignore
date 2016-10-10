@@ -4,4 +4,5 @@ Gruntfile.js
 package.json
 node_modules
 src
+!src/data/
 bower_components
