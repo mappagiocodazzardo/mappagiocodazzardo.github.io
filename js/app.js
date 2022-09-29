@@ -20,11 +20,18 @@ window.scrollTo(0,1);
 
 L.Icon.Default.imagePath = 'dist/js/images/';
 
-var tiles = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZG90ZG90ZG90IiwiYSI6ImNpbDExZXA2OTAwYTB3dW01aWhpM3NoaWgifQ.yLlK58v-ug5wVH1dcRwssw', {
-    id: 'mapbox.emerald'
-})
+var map = L.map('map').setView([45.8, 9.1], 9);
 
-var map = L.map('map').setView([45.8, 9.1], 9).addLayer(tiles);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+tileSize: 512,
+maxZoom: 18,
+zoomOffset: -1,
+id: 'mapbox/light-v10',
+accessToken: 'pk.eyJ1IjoiZG90ZG90ZG90IiwiYSI6ImNpbDExZXA2OTAwYTB3dW01aWhpM3NoaWgifQ.yLlK58v-ug5wVH1dcRwssw'
+}).addTo(map);
+
+
 L.control.scale({position: 'bottomright'}).addTo(map);
 
 var isCollapsed = (document.body.clientWidth < 768);
